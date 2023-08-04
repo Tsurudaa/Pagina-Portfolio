@@ -1,0 +1,67 @@
+.projetos {
+    margin-bottom: 16rem;
+    scroll-margin-top: 15rem;
+}
+
+.projetos .projetos_cont {
+    max-width: 56rem;
+    text-align: center;
+    margin: 0 auto 6rem;
+}
+
+.projetos ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+.projetos ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+.projetos ul li.projects_reversed-list {
+    flex-direction: row-reverse;
+}
+
+.projetos ul li:not(:last-of-type) {
+    margin-bottom: 12rem;
+}
+
+.projetos ul li .image img {
+    width: 100%;
+    min-width: 40rem;
+    max-width: 47rem;
+    height: auto;
+}
+
+.projetos ul li .info_proj {
+    max-width: 47rem;
+}
+
+.projetos ul li .info_proj p {
+    margin: 1rem 0 4rem;
+}
+
+.projetos ul li .info_proj a {
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+    .projetos ul li,
+    .projetos ul li.projetcs_reversed-list {
+        flex-direction: column;
+    }
+
+    .projetos ul li .info_proj {
+        max-width: 66rem;
+    }
+    
+    .projetos ul li .image img {
+        max-width: auto;
+    }
+}
